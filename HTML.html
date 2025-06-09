@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes or No Question</title>
+</head>
+<body>
+    <h1>Survey</h1>
+    <form>
+        <label for="question">Touch The Moving Word</label><br>
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Purple</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevents scrollbars from appearing */
+        }
+        .moving-word {
+            position: absolute;
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+            cursor: pointer; /* Changes the cursor to a pointer when hovering over the word */
+            animation: move 5s linear infinite;
+        }
+
+        @keyframes move {
+            0% { left: 0; top: 60%; }
+            25% { left: 25%; top: 25%; }
+            50% { left: 60%; top: 40%; }
+            75% { left: 40%; top: 70%; }
+            100% { left: 100%; top: 40%; }
+        }
+    </style>
+    <script>
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = 'Purple';
+        }
+    </script>
+</head>
+<body>
+    <div class="moving-word" onclick="changeBackgroundColor()">Purple</div>
+</body>
+</html>
+
+
